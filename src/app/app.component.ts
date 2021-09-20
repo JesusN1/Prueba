@@ -20,7 +20,7 @@ class producto {
     this.pro_cantidad = 0;
   }
 
-  mod_cantidad(operacion: string, monto: number): boolean /*true = Operacion Realizada Correctamente, false = Error en la operacion*/{
+  mod_cantidad(operacion: string, monto: number): boolean {
     let status:boolean = false;
 
     if (monto <= 0) {console.log('\tNo se puede ingresar el valor.');}
@@ -179,8 +179,7 @@ alm_04.alm_productos.push(prod_15)
 alm_04.alm_productos.push(prod_16)
 
 
-//if (prod_01.mod_cantidad('quitar',5) == true){//}
-//existeProducto('Papa', alm_01);
+
 
 
 vizualizaralmacen(alm_01);
@@ -192,4 +191,3 @@ moverProducto(alm_01,'Laminas',5,alm_03);
 vizualizaralmacen(alm_01);
 vizualizaralmacen(alm_03);
 
-//console.log(alm_01.alm_productos[0].pro_cantidad);
